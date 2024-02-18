@@ -1,10 +1,7 @@
 <h1>Angular App</h1>
 
-<p>{{ messageFromChild }}</p>
+<p>{{ messsage }}</p>
 
-<app-navbar></app-navbar>
-<app-post
-  [fromParent]="parentMessage"
-  (messageEvent)="receiveMessage($event)"
-></app-post>
-<p>{{ fromChildOutput }}</p>
+<!-- Property Binding -->
+<img src="{{ imgUrl }}" alt="Image" />
+<img [src]="imgUrl" alt="Image" />
