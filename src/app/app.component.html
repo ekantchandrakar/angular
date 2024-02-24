@@ -9,3 +9,12 @@
 
 <!-- Event Filtering and template variable-->
 <input type="text" (keyup.enter)="onKeyUp(username.value)" #username />
+
+<!-- Two Way Data Binding -->
+<div>
+  <input
+    type="text"
+    [(ngModel)]="userNameUsingTWDB"
+    (keyup.enter)="onKeyupInTWDB()"
+  />
+</div>
