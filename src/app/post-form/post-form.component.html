@@ -1,0 +1,33 @@
+<input
+  class="margin-class"
+  type="text"
+  placeholder="Post Title"
+  [(ngModel)]="postTitle"
+/>
+
+<div class="margin-class">
+  <textarea
+    cols="30"
+    rows="10"
+    placeholder="Post Details"
+    [(ngModel)]="postDetails"
+  ></textarea>
+</div>
+
+<div>
+  <input type="text" placeholder="Post Image URL" [(ngModel)]="postImageURL" />
+</div>
+
+<div>
+  <input type="text" placeholder="Post URL" [(ngModel)]="postURL" />
+</div>
+
+<input type="checkbox" [(ngModel)]="isChecked" />
+<span>Add Background</span>
+
+<br />
+
+<h1 [class.set-background]="isChecked">{{ postTitle }}</h1>
+<p>{{ postDetails }}</p>
+<img *ngIf="postImageURL.length > 0" [src]="postImageURL" alt="image" />
+<a *ngIf="postURL.length > 0" [href]="postURL" target="_blank">More Details</a>
