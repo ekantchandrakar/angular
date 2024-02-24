@@ -10,6 +10,8 @@ export class AppComponent {
 
   userNameUsingTWDB: string;
 
+  textValue: string = 'Value is coming from component';
+
   buttonClick(): void {
     console.log('Button Click Event Worked');
   }
@@ -20,5 +22,9 @@ export class AppComponent {
 
   onKeyupInTWDB(): void {
     console.log(`Angular TWDB: ${this.userNameUsingTWDB}`);
+  }
+
+  onKeyUpInOWAndTWDB(): void {
+    console.log(this.textValue);
   }
 }

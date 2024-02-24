@@ -18,3 +18,12 @@
     (keyup.enter)="onKeyupInTWDB()"
   />
 </div>
+
+<!-- One Way Vs. Two Way Data Binding -->
+<input type="text" [value]="textValue" (keyup.enter)="onKeyUpInOWAndTWDB()" />
+<br />
+<input
+  type="text"
+  [(ngModel)]="textValue"
+  (keyup.enter)="onKeyUpInOWAndTWDB()"
+/>
