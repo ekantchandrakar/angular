@@ -1,7 +1,11 @@
-<h1>Angular App</h1>
+<!-- Class Binding -->
+<h1 [class.text-red]="isTrue">Angular App</h1>
 
-<p>{{ messsage }}</p>
+<!-- Style Binding -->
+<h1 [style.color]="isTrue ? 'red' : 'blue'">Style Binding</h1>
 
-<!-- Property Binding -->
-<img src="{{ imgUrl }}" alt="Image" />
-<img [src]="imgUrl" alt="Image" />
+<!-- Event Binding -->
+<button (click)="buttonClick()">Click Me</button>
+
+<!-- Event Filtering -->
+<input type="text" (keyup.enter)="onKeyUp()" />
