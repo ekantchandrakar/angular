@@ -12,7 +12,7 @@ export class AppComponent {
     console.log('Button Click Event Worked');
   }
 
-  onKeyUp(): void {
-    console.log('Enter key is pressed');
+  onKeyUp(username: string): void {
+    console.log(username);
   }
 }

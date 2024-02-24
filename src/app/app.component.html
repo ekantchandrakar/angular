@@ -7,5 +7,5 @@
 <!-- Event Binding -->
 <button (click)="buttonClick()">Click Me</button>
 
-<!-- Event Filtering -->
-<input type="text" (keyup.enter)="onKeyUp()" />
+<!-- Event Filtering and template variable-->
+<input type="text" (keyup.enter)="onKeyUp(username.value)" #username />
