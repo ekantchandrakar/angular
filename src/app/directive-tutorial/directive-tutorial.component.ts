@@ -10,6 +10,8 @@ export class DirectiveTutorialComponent {
 
   stepForm: string = 'something else';
 
+  isActive: boolean = true;
+
   objArray: Array<any> = [
     { id: 1, postTitle: 'Post 1' },
     { id: 2, postTitle: 'Post 2' },
