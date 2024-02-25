@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class DirectiveTutorialComponent {
   postArray: string[] = ['Post 1', 'Post 2', 'Post 3', 'Post 4', 'Post 5'];
 
+  stepForm: string = 'something else';
+
   objArray: Array<any> = [
     { id: 1, postTitle: 'Post 1' },
     { id: 2, postTitle: 'Post 2' },
@@ -22,5 +24,9 @@ export class DirectiveTutorialComponent {
 
   deleteItem(index: any) {
     this.objArray.splice(index, 1);
+  }
+
+  onClick(status: string) {
+    this.stepForm = status;
   }
 }
