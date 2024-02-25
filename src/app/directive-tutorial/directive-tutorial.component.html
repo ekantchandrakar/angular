@@ -55,3 +55,18 @@
 >
   Using ngStyle Directive
 </h1>
+
+<p>----------------------ngClass Directive--------------</p>
+
+<h1 [class.main]="isActive" [class.text-weight]="isActive">
+  Using class binding
+</h1>
+
+<h1
+  [ngClass]="{
+    main: isActive,
+    'text-weight': isActive
+  }"
+>
+  Using ngClass binding
+</h1>
