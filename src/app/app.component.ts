@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  /*
   isTrue: boolean = false;
 
   userNameUsingTWDB: string;
@@ -27,4 +28,5 @@ export class AppComponent {
   onKeyUpInOWAndTWDB(): void {
     console.log(this.textValue);
   }
+  */
 }

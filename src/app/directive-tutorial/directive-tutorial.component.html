@@ -1,0 +1,22 @@
+<h4>Directive Tutorials</h4>
+
+<p>ngFor Directive</p>
+
+<ul>
+  <li *ngFor="let post of postArray">{{ post }}</li>
+</ul>
+
+<button (click)="addNew()">Add New Data</button>
+
+<div *ngIf="objArray.length > 0">
+  <ul>
+    <li *ngFor="let post of objArray; let i = index">
+      {{ post.postTitle }}
+      <button (click)="deleteItem(i)">Delete Item</button>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="objArray.length === 0">
+  <p>There is no data to fetch</p>
+</div>

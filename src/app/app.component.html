@@ -1,25 +1,27 @@
 <!-- Class Binding -->
-<h1 [class.text-red]="isTrue">Angular App</h1>
+<!-- <h1 [class.text-red]="isTrue">Angular App</h1> -->
 
 <!-- Style Binding -->
-<h1 [style.color]="isTrue ? 'red' : 'blue'">Style Binding</h1>
+<!--<h1 [style.color]="isTrue ? 'red' : 'blue'">Style Binding</h1> -->
 
 <!-- Event Binding -->
-<button (click)="buttonClick()">Click Me</button>
+<!--<button (click)="buttonClick()">Click Me</button> -->
 
 <!-- Event Filtering and template variable-->
-<input type="text" (keyup.enter)="onKeyUp(username.value)" #username />
+<!--<input type="text" (keyup.enter)="onKeyUp(username.value)" #username /> -->
 
 <!-- Two Way Data Binding -->
-<div>
+<!--<div>
   <input
     type="text"
     [(ngModel)]="userNameUsingTWDB"
     (keyup.enter)="onKeyupInTWDB()"
   />
 </div>
+-->
 
 <!-- One Way Vs. Two Way Data Binding -->
+<!--
 <input type="text" [value]="textValue" (keyup.enter)="onKeyUpInOWAndTWDB()" />
 <br />
 <input
@@ -33,3 +35,8 @@
   --------------------------------------------------------------------------------------------------------------
 </p>
 <app-post-form></app-post-form>
+
+<br />
+-->
+<p>-----------------------Directive---------------------------</p>
+<app-directive-tutorial></app-directive-tutorial>
