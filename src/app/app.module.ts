@@ -8,6 +8,7 @@ import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { DirectiveTutorialComponent } from './directive-tutorial/directive-tutorial.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DirectiveTutorialComponent } from './directive-tutorial/directive-tutor
     PostListComponent,
     PostFormComponent,
     DirectiveTutorialComponent,
+    UserDetailsComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

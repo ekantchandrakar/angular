@@ -1,0 +1,38 @@
+<div class="form-fields">
+  <h1>User Details</h1>
+
+  <input type="text" placeholder="Name" [(ngModel)]="userName" />
+  <br />
+
+  <input type="email" placeholder="Email" [(ngModel)]="userEmail" />
+  <br />
+  <textarea
+    cols="30"
+    rows="10"
+    placeholder="Address"
+    [(ngModel)]="userAddress"
+  ></textarea>
+  <br />
+  <button (click)="saveData()">Save Data</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Address</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody *ngIf="userData.length > 0">
+    <tr *ngFor="let user of userData; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.address }}</td>
+      <td><button (click)="onDelete(i)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>
