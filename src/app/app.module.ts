@@ -9,6 +9,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { DirectiveTutorialComponent } from './directive-tutorial/directive-tutorial.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ServiceTutorialComponent } from './service-tutorial/service-tutorial.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     PostFormComponent,
     DirectiveTutorialComponent,
     UserDetailsComponent,
+    ServiceTutorialComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
