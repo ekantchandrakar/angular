@@ -15,4 +15,13 @@ export class ServiceTutorialComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  addNewData() {
+    let newPost = {
+      id: 7,
+      postTitle: 'Post 7',
+    };
+
+    this.postService.addPost(newPost);
+  }
 }
