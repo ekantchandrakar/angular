@@ -9,8 +9,8 @@ import { PostService } from '../services/post.service';
 export class ServiceTutorialComponent implements OnInit {
   posts: Array<any>;
 
-  constructor() {
-    let postService = new PostService();
+  constructor(private postService: PostService) {
+    // let postService = new PostService();
     this.posts = postService.postList;
   }
 

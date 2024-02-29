@@ -10,6 +10,8 @@ import { PostFormComponent } from './post-form/post-form.component';
 import { DirectiveTutorialComponent } from './directive-tutorial/directive-tutorial.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ServiceTutorialComponent } from './service-tutorial/service-tutorial.component';
+import { AnotherServiceTutorialComponent } from './another-service-tutorial/another-service-tutorial.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -21,9 +23,10 @@ import { ServiceTutorialComponent } from './service-tutorial/service-tutorial.co
     DirectiveTutorialComponent,
     UserDetailsComponent,
     ServiceTutorialComponent,
+    AnotherServiceTutorialComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
