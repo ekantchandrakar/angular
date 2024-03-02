@@ -12,6 +12,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { ServiceTutorialComponent } from './service-tutorial/service-tutorial.component';
 import { AnotherServiceTutorialComponent } from './another-service-tutorial/another-service-tutorial.component';
 import { PostService } from './services/post.service';
+import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PostService } from './services/post.service';
     UserDetailsComponent,
     ServiceTutorialComponent,
     AnotherServiceTutorialComponent,
+    TemplateDrivenFormsComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [PostService],
